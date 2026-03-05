@@ -12,7 +12,6 @@ export default function Home() {
   const [emailInput, setEmailInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [qrValue, setQrValue] = useState('');
-  const [qrDataUrl, setQrDataUrl] = useState('');
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const router = useRouter();
 
@@ -28,8 +27,6 @@ export default function Home() {
     if (qrValue && canvasRef.current) {
       QRCode.toCanvas(canvasRef.current, qrValue, {
         errorCorrectionLevel: 'H',
-        type: 'image/png',
-        quality: 0.95,
         margin: 1,
         width: 200,
       }, (error) => {
