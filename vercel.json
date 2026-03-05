@@ -1,17 +1,6 @@
 {
   "version": 2,
   "buildCommand": "next build",
-  "outputDirectory": ".next",
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "env_development": {
-    "NODE_ENV": "development"
-  },
-  "regions": ["iad1"],
-  "functions": {
-    "app/**/*": {
-      "maxDuration": 30
-    }
-  }
+  "outputDirectory": ".next"
 }
+
