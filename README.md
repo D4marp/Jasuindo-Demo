@@ -113,6 +113,41 @@ tsconfig.json           # TypeScript config
 - Smooth animations & transitions
 - Clean and modern UI
 
+## 🌐 Deployment (Vercel)
+
+### Build Optimization
+Project sudah dikonfigurasi untuk optimal Vercel deployment:
+- ✅ Standalone output mode (lebih cepat dan lebih kecil)
+- ✅ SWC minification (faster compilation)
+- ✅ Production browser source maps disabled
+- ✅ Powered by header removed
+
+### Deploy ke Vercel
+```bash
+# Option 1: Via Vercel CLI
+npm i -g vercel
+vercel
+
+# Option 2: Via GitHub Integration
+# Push ke GitHub, connect di Vercel dashboard
+git add .
+git commit -m "Update"
+git push origin main
+```
+
+### Deployment Checklist
+- ✅ vercel.json configured
+- ✅ .vercelignore configured
+- ✅ next.config.js optimized
+- ✅ All dependencies in package.json
+- ✅ TypeScript config correct
+
+### Environment Variables (jika diperlukan nanti)
+Create `.env.local`:
+```
+NEXT_PUBLIC_API_URL=https://your-api.com
+```
+
 ## 📝 Catatan Developer
 
 Ini adalah **PROTOTYPE DUMMY** untuk:
